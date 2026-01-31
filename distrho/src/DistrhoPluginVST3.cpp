@@ -1706,7 +1706,7 @@ public:
        #endif
        #if DISTRHO_PLUGIN_WANT_PROGRAMS
         case kVst3InternalParameterProgram:
-            info->flags = V3_PARAM_CAN_AUTOMATE | V3_PARAM_IS_LIST | V3_PARAM_PROGRAM_CHANGE | V3_PARAM_IS_HIDDEN;
+            info->flags = V3_PARAM_CAN_AUTOMATE | V3_PARAM_IS_LIST | V3_PARAM_PROGRAM_CHANGE;
             info->step_count = fProgramCountMinusOne;
             strncpy_utf16(info->title, "Current Program", 128);
             strncpy_utf16(info->short_title, "Program", 128);
